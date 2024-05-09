@@ -1,0 +1,86 @@
+.bg-light {
+    background-color: #e6e6e6;
+}
+
+.btn-primary {
+    background-color: #0d1117;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #24292f;
+}
+
+.mb-0{
+    background-color: black;
+    text-align: center;
+}
+
+.card-header{
+    background-color: #0d1117;
+}
+
+.contacto-info {
+    display: none;
+}
+
+#fondo-main{
+    background-color: #0d1117;
+}
+
+#fondo-nav{
+    background-color: #24292f;
+}
+
+#fondo-contacto{
+    color: white;
+    background-color: #161b22;
+    border-color: #767c86;
+    border-radius: 14px;
+}
+
+#fondo-detalle{
+    background-color: #161b22;
+    border-color: #767c86;
+    border-radius: 14px;
+}
+
+#fondo-datos-usuario{
+    background-color: #161b22;
+    border-color: #767c86;
+    border-radius: 14px;
+}
+
+.card{
+    background-color: #161b22;
+    border-color: #767c86;
+    border-radius: 14px;  
+}
+
+.form-control{
+    background-color: #161b22;
+}
+
+.color-texto{
+    color: #fff;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.task-list-item {
+    max-height: 500px;
+    overflow-y: auto;
+}

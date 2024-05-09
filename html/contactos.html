@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contactos</title>
+</head>
+
+<body id="fondo-main">
+    <div class="container mt-5">
+        <nav id="fondo-nav" class="navbar navbar-expand-lg navbar-light bg-black">
+            <a class="navbar-brand text-white" href="#">Agenda Web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="nuevoContacto.html">Nuevo Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="toDoList.html">Tareas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="usuario.html">
+                            Usuario
+                            <img src="../img/usuario.png" alt="Icono de Usuario" class="img-fluid" width="20">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2 class="my-4 text-white">Contactos</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li id="fondo-contacto" class="list-group-item contacto-item"
+                        data-nombre="Denis Sebastian" data-apodo="Sebas" data-apellido="Abad Santos"
+                        data-telefono="51844596">
+                        <a>Denis Abad</a>
+                    </li>
+                    <li id="fondo-contacto" class="list-group-item contacto-item" data-nombre="María" data-apodo="María"
+                        data-apellido="García" data-telefono="42126358">
+                        <a>María García</a>
+                    </li>
+                    <li id="fondo-contacto" class="list-group-item contacto-item" data-nombre="Alejandro"
+                        data-apodo="Alejandro" data-apellido="Pérez" data-telefono="87962021">
+                        <a>Alejandro Pérez</a>
+                    </li>
+                    <li id="fondo-contacto" class="list-group-item contacto-item" data-nombre="Ana" data-apodo="Ana"
+                        data-apellido="Rodríguez" data-telefono="30740590">
+                        <a>Ana Rodríguez</a>
+                    </li>
+                    <li id="fondo-contacto" class="list-group-item contacto-item" data-nombre="Javier"
+                        data-apodo="Javier" data-apellido="López" data-telefono="44806498">
+                        <a>Javier López</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-secondary btn-sm mt-3">
+                    <a href="nuevoContacto.html" class="btn text-white">Agregar nuevo contacto</a>
+                </button>
+            </div>
+
+            <div class="col-md-6">
+                <div id="fondo-detalle" class="contacto-info text-white p-3">
+                    <h3>Detalles del contacto</h3>
+                    <p><strong>Apodo:</strong> <span id="apodoContacto"></span></p>
+                    <p><strong>Nombre:</strong> <span id="nombreContacto"></span></p>
+                    <p><strong>Apellido:</strong> <span id="apellidoContacto"></span></p>
+                    <p><strong>Teléfono:</strong> <span id="telefonoContacto"></span></p>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <script src="../js/agenda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

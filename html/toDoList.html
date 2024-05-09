@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tareas y pendientes</title>
+</head>
+
+<body id="fondo-main">
+    <div class="container mt-5">
+        <nav id="fondo-nav" class="navbar navbar-expand-lg navbar-light bg-black">
+            <a class="navbar-brand text-white" href="#">Agenda Web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="nuevoContacto.html">Nuevo Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="toDoList.html">Tareas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="usuario.html">
+                            Usuario
+                            <img src="../img/usuario.png" alt="Icono de Usuario" class="img-fluid" width="20">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2 class="my-4 text-white">Tareas y pendientes</h2>
+
+        <div class="container mt-5">
+            <form id="formularioTarea">
+                <div class="form-group">
+                    <label class="text-white" for="tarea">Nueva tarea:</label>
+                    <input type="text" class="form-control color-texto" id="tarea" placeholder="Ingrese una nueva tarea">
+                    <select class="form-control mt-2 color-texto" id="prioridad">
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-secondary btn-sm mt-3" onclick="agregarTarea()">Agregar Tarea</button>
+            </form>
+        
+            <ul class="list-group mt-3 bg-black" id="listaTareas" onclick="seleccionarTarea(event)">
+        
+            </ul>
+        
+            <div class="mt-3" id="formularioEdicion" style="display: none;">
+                <label class="text-white" for="tareaEditada">Ingresa los nuevos datos:</label>
+                <input type="text" class="form-control color-texto" id="tareaEditada" placeholder="Editar tarea seleccionada">
+                <select class="form-control mt-2 color-texto" id="prioridadEditada" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+                <button type="button" class="btn btn-success mt-2" onclick="confirmarEdicionTarea()">Confirmar Edición</button>
+            </div>                      
+            <label class="text-white mt-2" for="tareaEditada">Seleccione una tarea para poder editar o eliminar:</label>
+            <div id="noTaskSelectedMessage" style="display: none; color: red;">No hay ninguna tarea seleccionada.</div>
+            <div class="mt-3">
+                <button type="button" class="btn btn-warning mr-2" onclick="mostrarFormularioEdicion()">Editar Tarea</button>
+                <button type="button" class="btn btn-danger" onclick="eliminarTarea()">Eliminar Tarea</button>
+            </div>
+        </div>
+        
+        <script src="../js/agenda.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
